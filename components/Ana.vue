@@ -18,7 +18,7 @@
                     Time remaining to go to the observatory 🌌: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
                 </Coundown>
 
-                <Coundown :time="time[2]" v-slot="{ days, hours, minutes, seconds }">
+                <Coundown :time="time[3]" v-slot="{ days, hours, minutes, seconds }">
                     Time remaining for Ana's 25yo 💜🐓: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
                 </Coundown>
             </div>
