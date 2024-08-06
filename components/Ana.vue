@@ -7,7 +7,7 @@
 
             <div class="text-center flex flex-col space-y-4">
                 <Coundown :time="time[0]" v-slot="{ days, hours, minutes, seconds }">
-                    Time remaining to be on holidays 🏖️: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
+                    Time remaining to be on holidays 🏖️ and say goodbye to 🐬: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
                 </Coundown>
 
                 <Coundown :time="time[1]" v-slot="{ days, hours, minutes, seconds }">
@@ -30,7 +30,7 @@
 import { ref } from 'vue';
 
 const time = ref([
-    new Date('2024-08-15T00:00:00') - new Date,
+    new Date('2024-08-14T18:00:00') - new Date,
     new Date('2024-09-02T09:00:00') - new Date,
     new Date('2024-08-09T21:15:00') - new Date,
     new Date('2025-02-12T21:15:00') - new Date,
