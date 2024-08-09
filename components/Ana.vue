@@ -38,7 +38,7 @@ const time = ref([
     new Date('2024-09-02T09:00:00') - new Date,
     new Date('2024-08-09T21:00:00') - new Date,
     new Date('2025-02-12T00:00:00') - new Date,
-    new Date('2024-08-13T00:00:00') - new Date,
+    new Date('2024-08-10T00:00:00') - new Date,
 ]);
 </script>
 
