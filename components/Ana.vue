@@ -21,6 +21,10 @@
                 <Coundown :time="time[3]" v-slot="{ days, hours, minutes, seconds }">
                     Time remaining for Ana's 25yo 💜🐓: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
                 </Coundown>
+
+                <Coundown :time="time[4]" v-slot="{ days, hours, minutes, seconds }">
+                    Time remaining for the Drive Division Coimbra Trip 🏁: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
+                </Coundown>
             </div>
         </UCard>
     </UContainer>
@@ -32,8 +36,9 @@ import { ref } from 'vue';
 const time = ref([
     new Date('2024-08-14T18:00:00') - new Date,
     new Date('2024-09-02T09:00:00') - new Date,
-    new Date('2024-08-09T21:15:00') - new Date,
-    new Date('2025-02-12T21:15:00') - new Date,
+    new Date('2024-08-09T21:00:00') - new Date,
+    new Date('2025-02-12T00:00:00') - new Date,
+    new Date('2024-08-13T00:00:00') - new Date,
 ]);
 </script>
 
