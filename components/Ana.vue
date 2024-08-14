@@ -7,7 +7,7 @@
 
             <div class="text-center flex flex-col space-y-4">
                 <Coundown :time="time[0]" v-slot="{ days, hours, minutes, seconds }">
-                    Time remaining to be on holidays 🏖️ and say goodbye to 🐬: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
+                    Time remaining to pick up the Akita 🌸🐕: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
                 </Coundown>
 
                 <Coundown :time="time[1]" v-slot="{ days, hours, minutes, seconds }">
@@ -15,15 +15,7 @@
                 </Coundown>
 
                 <Coundown :time="time[2]" v-slot="{ days, hours, minutes, seconds }">
-                    Time remaining to go to the observatory 🌌: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
-                </Coundown>
-
-                <Coundown :time="time[3]" v-slot="{ days, hours, minutes, seconds }">
                     Time remaining for Ana's 25yo 💜🐓: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
-                </Coundown>
-
-                <Coundown :time="time[4]" v-slot="{ days, hours, minutes, seconds }">
-                    Time remaining for the Drive Division Coimbra Trip 🏁: <br>{{ days }} days, {{ hours }} hours, {{ minutes }} minutes, {{ seconds }} seconds.
                 </Coundown>
             </div>
         </UCard>
@@ -34,11 +26,9 @@
 import { ref } from 'vue';
 
 const time = ref([
-    new Date('2024-08-14T18:00:00') - new Date,
+    new Date('2024-08-16T09:00:00') - new Date,
     new Date('2024-09-02T09:00:00') - new Date,
-    new Date('2024-08-09T21:00:00') - new Date,
     new Date('2025-02-12T00:00:00') - new Date,
-    new Date('2024-08-10T00:00:00') - new Date,
 ]);
 </script>
 
